@@ -1,9 +1,9 @@
 // JavaScript source code
-var bank = parseInt(localStorage.getItem("bankValue"));
+var bank = parseFloat(localStorage.getItem("bankValue"));
 var inputValue = 0;
 
 function count() {
-    inputValue = parseInt(document.getElementById("moneyInput").value);
+    inputValue = parseFloat(document.getElementById("moneyInput").value);
     //clear console
     console.clear()
     //button pushed 
@@ -24,7 +24,7 @@ function count() {
         // Store
         localStorage.setItem("bankValue", bank);
         // Retrieve
-        document.getElementById("bank_value").innerHTML = parseInt(localStorage.getItem("bankValue"));
+        document.getElementById("bank_value").innerHTML = parseFloat(localStorage.getItem("bankValue"));
     } else {
         document.getElementById("bank_value").innerHTML = "Sorry, your browser does not support Web Storage...";
     }
