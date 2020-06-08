@@ -1,8 +1,8 @@
 // JavaScript source code
-var bank = parseInt(localStorage.getItem("bankValue"));
-var inputValue = 0;
+var bank = parseFloat(localStorage.getItem("bankValue"));
+var inputValue = 0.0;
 function decount() {
-    inputValue = parseInt(document.getElementById("moneyOutput").value);
+    inputValue = parseFloat(document.getElementById("moneyOutput").value);
     //clear console
     console.clear()
     //button pushed 
@@ -29,7 +29,7 @@ function decount() {
     }
 }
 function count() {
-    inputValue = parseInt(document.getElementById("moneyInput").value);
+    inputValue = parseFloat(document.getElementById("moneyInput").value);
     //clear console
     console.clear()
     //button pushed 

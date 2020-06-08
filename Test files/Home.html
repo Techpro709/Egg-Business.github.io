@@ -12,15 +12,19 @@
 <body onload="display()">
   <label for="bank_value">Bank value = </label>
   <div id="bank_value"></div>
+
   <div id="add_money">
-    <input type="number" id="moneyInput" />
-    <button onclick="count()">Recive</button>
+    <input type="number" step=".01" id="moneyInput" />
+    <button onclick="count()">+</button>
   </div>
+
   <button onclick="reset()">Reset bank value</button>
+
   <div id="subtract_money">
     <input type="number" id="moneyOutput" />
-    <button onclick="decount()">Recive</button>
+    <button onclick="decount()">-</button>
   </div>
+
 </body>
 
 </html>
