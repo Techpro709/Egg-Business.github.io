@@ -1,20 +1,19 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <title>Home not test</title>
-  <link rel="stylesheet" href="Style.css" />
-  <script src="Script.js"></script>
-</head>
-
-<body onload="display()">
-  <label for="bank_value">Bank value = </label>
-  <div id="bank_value"></div>
-  <div><input step=".01" type="number" id="moneyInput" />
+  <head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <link rel="stylesheet" href="Style.css" />
+    <script src="Script.js"></script>
+  </head>
+  <body onload="display()">
+    <label for="bank_value">Bank value = <span id="bank_value"></apsn></label>
+    <br>
+    <input type="number" id="moneyInput" placeholder="Enter Money" step=".01" oninput="validate(this)"/>
+    <br>
+    <br>
     <button onclick="count()">Recive</button>
-    <button onclick="reset()">Reset bank value</button></div>
-</body>
-
+    <button onclick="reset()">Reset bank value</button>
+  </body>
 </html>
