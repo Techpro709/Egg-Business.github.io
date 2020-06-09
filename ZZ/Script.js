@@ -6,8 +6,9 @@ var bank = Number(localStorage.getItem("bankValue"));
 var inputValue = 0;
 
 //validates input up to only 2 decimal places
-var validate = function (e) {
+function validate (e) {
     var t = e.value;
+    console.log("This function is being called");
     e.value = (t.indexOf(".") >= 0) ? (t.substr(0, t.indexOf(".")) + t.substr(t.indexOf("."), 3)) : t;
 }
 //rounds to nearest 2 decimals

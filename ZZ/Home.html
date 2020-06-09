@@ -1,7 +1,6 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <title>Home</title>
@@ -11,13 +10,15 @@
 
 <body onload="display()">
   <div id="body">
-    <label for="bank_value">Bank value = <span id="bank_value"></apsn></label>
+    <label for="bank_value">Bank value = <span id="bank_value"></span></label>
     <br>
-    <input type="number" id="moneyInput" placeholder="Enter Money" step=".01" oninput="validate(this)" />
+    <input type="number" id="moneyInput" placeholder="Enter Money" step=".01" onkeydown="validate(this)" />
     <br>
     <br>
     <button onclick="count()">Recive</button>
     <button onclick="reset()">Reset bank value</button>
+    <div id="Scratch_Project">
+    </div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><b></b><br><br><br><br><br><br><br><br><br>
     <br><br><br><br>
   </div>

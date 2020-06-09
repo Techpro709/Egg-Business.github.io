@@ -1,0 +1,18 @@
+.wiget{
+    display: inline-block;
+}
+.wiget1{
+    width: 100px;
+    height: 60px;
+}
+.wiget2{ 
+    height: 60px;
+    width: 40px;
+}
+body{
+    background-color: green;
+}
+div{
+    background-color: greenyellow;
+    
+}
