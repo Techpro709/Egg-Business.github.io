@@ -6,7 +6,7 @@ var bank = Number(localStorage.getItem("bankValue"));
 var inputValue = 0;
 
 //validates input up to only 2 decimal places
-function validate (e) {
+function validate(e) {
     var t = e.value;
     console.log("This function is being called");
     e.value = (t.indexOf(".") >= 0) ? (t.substr(0, t.indexOf(".")) + t.substr(t.indexOf("."), 3)) : t;
@@ -43,7 +43,10 @@ function count() {
     } else {
         document.getElementById("bank_value").innerHTML = "Sorry, your browser does not support Web Storage...";
     }
+    document.title = "Home  Bank = " + bank;
+    
 }
+
 //displays bank currency
 function display() {
     document.getElementById("bank_value").innerHTML = localStorage.getItem("bankValue");
@@ -57,4 +60,6 @@ function reset() {
     bank = 0;
     localStorage.setItem("bankValue", bank);
     display()
+    document.title = "Home  Bank = " + bank;
+
 }

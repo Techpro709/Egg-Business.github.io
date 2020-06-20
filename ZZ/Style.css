@@ -1,8 +1,11 @@
-﻿#body
+﻿html,input,button,p,label,body
 {
-cursor: crosshair;
+    cursor: crosshair;
 }
 h1{
     text-align:center;
 
+}
+html, body{
+    height: 100%;
 }
