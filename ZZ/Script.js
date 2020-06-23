@@ -21,7 +21,7 @@ function count() {
     //clear console
     console.clear()
     //button pushed 
-    console.log("Recive has been pushed");
+    console.log("Receive has been pushed");
     //what is inputvalue
 
 

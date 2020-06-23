@@ -5,8 +5,9 @@ function check(){
 	var P = document.getElementById('P').value;
 	
     document.getElementById("glass").innerHTML="Username = " + U + " Password = " + P;
-	if(U.tolower() == "haytham"){
-		document.getElementById("glass").innerHTML+=" <br>Your an admin"
+	if(U.toLowerCase() === "ztechpro"){
+		document.getElementById("glass").innerHTML+=" <br>You're an admin"
+		
 	}else{
 	
 		
